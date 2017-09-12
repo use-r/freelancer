@@ -1,2 +1,2 @@
 # freelancer
-Repository for sharing files 
+Repository for sharing files and scripts
