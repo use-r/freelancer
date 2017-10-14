@@ -2,5 +2,5 @@
 
 git add .
 git commit -m updated
-git pushi
+git push
 echo 'done'
