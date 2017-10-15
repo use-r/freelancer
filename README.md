@@ -11,4 +11,4 @@ The service I provide includes (I mainly use Python)
 - Numerical calculation (numpy)
 - Image processing (opencv & pillow)
 
-I started freelancing because I wanted to improve my coding skills and earn some money. Working as a freelancer gave me a chance to grow as a programmer and talk to people all over the world.
+I started freelancing because I wanted to improve my coding skills and earn some money. Working as a freelancer gave me a chance to grow as a programmer.
