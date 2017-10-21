@@ -54,7 +54,7 @@ I was using simulation softwares for optical fibers which can be controlled from
 
 ## VBA 
 ### Automation for Excel, PowerPoint, and Word
-I mainly use VBA to automate the following.
+I use VBA to automate the following.
 - Calculation
 - Data sorting and cleaning
 - Editing the format of shapes and charts
