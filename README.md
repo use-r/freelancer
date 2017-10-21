@@ -1,4 +1,4 @@
-# Freelancer
+# Freelance
 
 I have been freelancing since January 2017 in https://www.freelancer.com.<br>
 This is [my account](https://www.freelancer.com/u/harupy#/) where you can see the projects I've completed and the reivews posted on me.
