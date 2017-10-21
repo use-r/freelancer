@@ -17,7 +17,7 @@ I started freelancing because I wanted to improve my coding skill and earn some 
 
 # My Coding Experience
 
-Proficient : Python, VBA, MATLAB
+Proficient : Python, VBA, MATLAB <br>
 Familiar with : Java, C++, HTML, CSS, JavaScript,
 
 ## Python
