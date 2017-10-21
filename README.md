@@ -47,7 +47,7 @@ Other than the above, I have experience in:
 I used MATLAB for my research when I was a graduate student.
 
 ### Numerical calculation
-I wrote code to solve a complex differential equation (called nonlinear Schoredinger equation) numerically to simulate the performance of optical fibers I fabricated. I used MATLAB for a while, but I switched to Python later because it's much more flexible and easier to write code.
+I wrote code to numerically solve a complex differential equation (called nonlinear Schoredinger equation) to simulate the performance of optical fibers I designed. I used MATLAB for a while, but I switched to Python later because it's much more flexible and easier to write code.
 
 ### Software automation
 I was using simulation softwares for optical fibers which can be controlled from MATLAB. I wrote code in MATLAB to automate simulations in the software and optimize the structure of optical fibers.
