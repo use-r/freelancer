@@ -22,7 +22,7 @@ Familiar with : Java, C++, HTML, CSS, JavaScript,
 
 ## Python
 ### Web scraping
-This is what I'm best at for Python. Web scraping is a technique to extract large amounts of data (text, image, video, etc.) automatically from the web. I've completed lots of web scraping projects on freelacer.com I mentioned above, so I have strong confidence in this technique. I learned web development (HTML, CSS, and JavaScript) and how to handle data in an effcient way through web scraping. 
+This is what I'm best at for Python. Web scraping is a technique to extract large amounts of data (text, image, video, etc.) automatically from the web. I've completed lots of web scraping projects on freelacer.com I mentioned above, so I have strong confidence in this technique. I learned web development (HTML, CSS, and JavaScript) and how to handle data in an effcient way while learning web scraping. 
 
 ### Browser automation
 Python has a library which can control web browsers (Chrome, Firefox, etc.). I use the library to automate the followiing.
