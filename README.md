@@ -37,7 +37,6 @@ When I was a graduate student, I developed graphical user interfaces in Python w
 
 <br>
 <br>
-<br>
 
 Other than the above, I have experience in:
 - Image processing
