@@ -12,7 +12,7 @@ The service I provide includes (I mainly use Python):
 
 Other than Python, I have experience in C++, Java, VBA, and JavaScript.
 
-I started freelancing because I wanted to improve my coding skill and earn some money. Working as a freelancer gave me a chance to grow as a programmer.
+I started freelancing because I wanted to improve my coding skill. Working as a freelancer gave me a chance to grow as a programmer.
 
 
 # My Coding Experience
