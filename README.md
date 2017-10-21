@@ -30,7 +30,8 @@ Python has a library which can control web browsers (Chrome, Firefox, etc.). I u
 - File upload and download
 - Google search
 - Web games
-This is a sample program I posted on Youtube : https://www.youtube.com/watch?v=Z4TcF5bT0FE
+This is a sample program I posted on Youtube : <br>
+https://www.youtube.com/watch?v=Z4TcF5bT0FE
 
 ### Automation for lab equipments
 When I was a graduate student, I developed graphical user interfaces in Python which allows me to control lab equipments, such as laser, optical analyzer, and alignment stage from my laptop and automate experiments. 
