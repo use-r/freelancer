@@ -1,7 +1,7 @@
 # Freelance
 
 I have been freelancing since January 2017 on https://www.freelancer.com.<br>
-This is [my account](https://www.freelancer.com/u/harupy#/) where you can see the projects I've completed and the reivews posted on me.
+This is [my account](https://www.freelancer.com/u/harupy#/) where you can see the projects I've completed and the reivews posted on me.<br>
 I upload some of the projects I've complete on this repository.
 
 The service I provide includes (I mainly use Python) :
