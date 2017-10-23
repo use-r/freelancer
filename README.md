@@ -2,6 +2,7 @@
 
 I have been freelancing since January 2017 on https://www.freelancer.com.<br>
 This is [my account](https://www.freelancer.com/u/harupy#/) where you can see the projects I've completed and the reivews posted on me.
+I upload some of the projects I've complete on this repository.
 
 The service I provide includes (I mainly use Python) :
 - Web scraping (beautifulsoup)
@@ -22,7 +23,7 @@ Familiar with : Java, C++, HTML, CSS, JavaScript,
 
 ## Python
 ### Web scraping
-This is what I'm best at for Python. Web scraping is a technique to extract large amounts of data (text, image, video, etc.) automatically from the web. I've completed lots of web scraping projects on freelacer.com I mentioned above, so I have strong confidence in this technique. I learned web development (HTML, CSS, and JavaScript) and how to handle data in an effcient way while learning web scraping. 
+This is what I'm best at for Python. Web scraping is a technique to extract large amounts of data (text, image, video, etc.) automatically from the web. I've completed lots of web scraping projects on freelacer.com I mentioned above, so I have strong confidence in this technique. I learned web development (HTML, CSS, and JavaScript) and how to handle data in an effcient way while learning web scraping.
 
 ### Browser automation
 Python has a library which can control web browsers (Chrome, Firefox, etc.). I use the library to automate the followiing.
@@ -34,17 +35,17 @@ This is a sample program I posted on Youtube : <br>
 https://www.youtube.com/watch?v=Z4TcF5bT0FE
 
 ### Automation for lab equipments
-When I was a graduate student, I developed graphical user interfaces in Python which allows me to control lab equipments, such as laser, optical analyzer, and alignment stage from my laptop and automate experiments. 
+When I was a graduate student, I developed graphical user interfaces in Python which allows me to control lab equipments, such as laser, optical analyzer, and alignment stage from my laptop and automate experiments.
 
 <br>
 <br>
 
 Other than the above, I have experience in :
 - Image processing
-- Numerical calculation 
+- Numerical calculation
 - Data visualization
 
-## MATLAB 
+## MATLAB
 I used MATLAB for my research when I was a graduate student.
 
 ### Numerical calculation
@@ -53,7 +54,7 @@ I wrote code to numerically solve a complex differential equation (called nonlin
 ### Software automation
 I was using simulation softwares for optical fibers which can be controlled from MATLAB. I wrote code in MATLAB to automate simulations in the software and optimize the structure of optical fibers.
 
-## VBA 
+## VBA
 ### Automation for Excel, PowerPoint, and Word
 I use VBA to automate the following.
 - Calculation
