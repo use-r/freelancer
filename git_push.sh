@@ -1,6 +1,6 @@
 #!/bin/sh
 
 git add .
-git commit -m updated
+git commit -m update
 git push
 echo 'done'
