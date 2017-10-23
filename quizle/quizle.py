@@ -1,6 +1,7 @@
 import json
 import collections
 
+
 def main():
 	try:
 		with open('data.txt', 'r', encoding='utf-8') as f:
@@ -10,7 +11,7 @@ def main():
 
 	print('Welcome to the Quizle Admin Program')
 
-	while True: 
+	while True:
 		print('Choose [a]dd, [l]ist, [s]earch, [v]iew, [d]elete or [q]uit.')
 		val = inputSomething('> ')
 
@@ -20,7 +21,8 @@ def main():
 			ansList = []
 			while True:
 				ans = inputSomething('Enter a valid answer (enter "q" when done): ')
-				if ans == 'q': break
+				if ans == 'q':
+					break
 				ansList.append(ans)
 			quest['answers'] = ansList
 			while True:
@@ -56,7 +58,8 @@ def main():
 			term = inputSomething('Enter a serach term: ').lower()
 
 			for i, q in enumerate(data):
-				if term in q['question'].lower(): print(str(i) + ')', q['question'])
+				if term in q['question'].lower():
+					print(str(i) + ')', q['question'])
 
 		elif val == 'd':
 			if len(data) == 0:
@@ -78,6 +81,7 @@ def main():
 		else:
 			print('Invalid choice')
 
+
 def inputInt(prompt):
 	while True:
 		try:
@@ -86,6 +90,7 @@ def inputInt(prompt):
 		except ValueError:
 			print('Invalid input')
 			continue
+
 
 def inputSomething(prompt):
 	while True:
@@ -96,9 +101,11 @@ def inputSomething(prompt):
 			print('Invalid input')
 			continue
 
+
 def saveChanges(dataList):
 	with open('data.txt', 'w', encoding='utf-8') as f:
 		json.dump(dataList, f)
+
 
 if __name__ == '__main__':
 	main()

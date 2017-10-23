@@ -1,10 +1,11 @@
 
 import random
 
+
 def play_game():
 	score = 0
 
-	for turn in range(1,4):
+	for turn in range(1, 4):
 		turn_score = 0
 		print()
 		print('Turn {} of 3'.format(turn))
@@ -14,23 +15,23 @@ def play_game():
 
 		while True:
 			print('Rolling {} dice'.format(dice_remain))
-			rand_list = [random.randint(1,6) for _ in range(dice_remain)]
+			rand_list = [random.randint(1, 6) for _ in range(dice_remain)]
 			rand_list.sort()
 
 			print(rand_list)
 			match_flag = False
-			for num in range(1,7):
+			for num in range(1, 7):
 				match = rand_list.count(num)
 
 				if match >= 2:
 					match_flag = True
-					tmp_score = match*num
+					tmp_score = match * num
 					print(num, 'x', match, '=', tmp_score, 'points')
 					if 'yes' in input('set aside these dice, yes or no? '):
 						print('you set aside {} points'.format(tmp_score))
 						print()
 						turn_score += tmp_score
-						dice_remain	-= match
+						dice_remain -= match
 					else:
 						print()
 
@@ -66,6 +67,7 @@ def play_game():
 	print('Game Over')
 	return score
 
+
 def check_score(score):
 	print('your final score : {} points'.format(score))
 	if score >= 60:
@@ -78,6 +80,7 @@ def check_score(score):
 		print('Good score!')
 	else:
 		print('')
+
 
 if __name__ == '__main__':
 	score = play_game()

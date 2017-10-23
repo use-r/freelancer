@@ -1,14 +1,11 @@
-import os
-import sys
+
 import time
-import csv
-import codecs
 import requests
-from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from multiprocessing import Pool
 
 base_url = 'https://www.walletexplorer.com'
+
 
 def getinfo(url):
 	while True:
@@ -34,25 +31,27 @@ def getinfo(url):
 		if cnt == 1:
 			header = ['site'] + [x.text for x in trs[0].findAll('th')]
 			print(header)
-			with open(fname, 'w', encoding='utf-8') as f: f.write(sep.join(header) + '\n') # create output file and write header
+			with open(fname, 'w', encoding='utf-8') as f:
+				f.write(sep.join(header) + '\n')  # create output file and write header
 
-		for tr in trs[1:]: # skip the first element because it's header
+		for tr in trs[1:]:
 			output = [fname.replace('.txt', '')]
 
 			for td in tr.findAll('td'):
 				output.append(td.text.replace('\xa0', ''))
 
-			with open(fname, 'a', encoding='utf-8') as f: f.write(sep.join(output) + '\n') # write ouptput
+			with open(fname, 'a', encoding='utf-8') as f:
+				f.write(sep.join(output) + '\n')  # write ouptput
 
 		pages = soup.find('div', {'class': 'paging'}).findAll('a')
 
-		if not pages: # means this url has only one page
+		if not pages:
 			print('This is the last page.')
 			break
 		else:
-			for page in pages: # iterate over page links to find next link
+			for page in pages:  # iterate over page links to find next link
 				is_last = True
-				if 'Next' in page.text or 'Last' in page.text: # means next page is found
+				if 'Next' in page.text or 'Last' in page.text:  # means next page is found
 					next_url = base_url + page['href']
 					is_last = False
 					break
@@ -65,6 +64,7 @@ def getinfo(url):
 			soup = BeautifulSoup(html, 'lxml')
 			print()
 
+
 def getpage(url):
 	html = requests.get(url).text
 	soup = BeautifulSoup(html, 'lxml')
@@ -73,6 +73,7 @@ def getpage(url):
 	print(page)
 
 	return page
+
 
 if __name__ == '__main__':
 	top_url = 'https://www.walletexplorer.com/'
