@@ -11,10 +11,7 @@ The service I provide includes (I mainly use Python) :
 - Numerical calculation (numpy)
 - Image processing (opencv & pillow)
 
-Other than Python, I have experience in C++, Java, VBA, and JavaScript.
-
-I started freelancing because I wanted to improve my coding skill. Working as a freelancer gave me a chance to grow as a programmer.
-
+I started freelancing because I wanted to improve my coding skill.
 
 # My Coding Experience
 
