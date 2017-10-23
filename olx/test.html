@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" class=" is-responsive is-mobile-first">
+<head>
+    <!-- Critical path meta tags only -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login to Hire Freelancers &amp; Find Work | Freelancer</title>
+    <link rel="preconnect" href="//www.f-cdn.com" crossorigin>
+    <link rel="dns-prefetch" href="//cdn2.f-cdn.com">
+    <link rel="dns-prefetch" href="//cdn3.f-cdn.com">
+    <link rel="dns-prefetch" href="//cdn4.f-cdn.com">
+    <link rel="dns-prefetch" href="//cdn5.f-cdn.com">
+    <link rel="dns-prefetch" href="//cdn6.f-cdn.com">
+
+    <!-- Google Experiment. ga_exp.js is special, don't include any script in the head! -->
+    
+
+
+    <!-- Font face handling for an FOFT rendering approach -->
+    <style>
+        @font-face {
+          font-family: 'RobotoSubset';
+          font-weight: normal;
+          font-style: normal;
+          src: url('/static/css/fonts/roboto-regular/Roboto-regular.eot');
+          src: url('/static/css/fonts/roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
+               local('Roboto'),
+               local('Roboto-regular'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.woff2') format('woff2'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.woff') format('woff'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.ttf') format('truetype'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+        }
+
+        @font-face {
+          font-family: 'Roboto';
+          font-weight: normal;
+          font-style: normal;
+          src: url('/static/css/fonts/roboto-regular/Roboto-regular.eot');
+          src: url('/static/css/fonts/roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
+               local('Roboto'),
+               local('Roboto-regular'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.woff2') format('woff2'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.woff') format('woff'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.ttf') format('truetype'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+        }
+        @font-face {
+          font-family: 'Roboto';
+          font-weight: normal;
+          font-style: italic;
+          src: url('/static/css/fonts/roboto-italic/Roboto-italic.eot');
+          src: url('/static/css/fonts/roboto-italic/Roboto-italic.eot?#iefix') format('embedded-opentype'),
+               local('Roboto'),
+               local('Roboto Italic'),
+               local('Roboto-Italic'),
+               url('/static/css/fonts/roboto-italic/Roboto-italic.woff2') format('woff2'),
+               url('/static/css/fonts/roboto-italic/Roboto-italic.woff') format('woff'),
+               url('/static/css/fonts/roboto-italic/Roboto-italic.ttf') format('truetype'),
+               url('/static/css/fonts/roboto-italic/Roboto-italic.svg#Roboto') format('svg');
+        }
+        @font-face {
+          font-family: 'Roboto';
+          font-weight: bold;
+          font-style: normal;
+          src: url('/static/css/fonts/roboto-bold/Roboto-700.eot');
+          src: url('/static/css/fonts/roboto-bold/Roboto-700.eot?#iefix') format('embedded-opentype'),
+               local('Roboto'),
+               local('Roboto Bold'),
+               local('Roboto-700'),
+               url('/static/css/fonts/roboto-bold/Roboto-700.woff2') format('woff2'),
+               url('/static/css/fonts/roboto-bold/Roboto-700.woff') format('woff'),
+               url('/static/css/fonts/roboto-bold/Roboto-700.ttf') format('truetype'),
+               url('/static/css/fonts/roboto-bold/Roboto-700.svg#Roboto') format('svg');
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-style: normal;
+            src: url('/static/css/fonts/roboto-light/Roboto-light.eot');
+            src: url('/static/css/fonts/roboto-light/Roboto-light.eot?#iefix') format('embedded-opentype'),
+                local('Roboto'),
+                local('Roboto Light'),
+                local('Roboto-light'),
+                url('/static/css/fonts/roboto-light/Roboto-light.woff2') format('woff2'),
+                url('/static/css/fonts/roboto-light/Roboto-light.woff') format('woff'),
+                url('/static/css/fonts/roboto-light/Roboto-light.ttf') format('truetype'),
+                url('/static/css/fonts/roboto-light/Roboto-light.svg#robotolight') format('svg');
+        }
+
+        /* Prevent FOIT */
+        .is-webfont-not-loaded body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        .is-webfont-subset body {
+            font-family: 'RobotoSubset', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+    </style>
+
+    <script>
+    (function() {
+        (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+
+(function(){function m(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function n(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function l(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",l),a()})};function t(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+function x(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=l;y(a)&&a.a.parentNode&&b(a.g)}var l=a;m(a.b,c);m(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,C=null,E=null,F=null;function I(){if(null===E){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}E=""!==a.style.font}return E}function J(a,b){return[a.style,a.weight,I()?a.stretch:"","100px",b].join(" ")}
+A.prototype.load=function(a,b){var c=this,l=a||"BESbswy",r=0,D=b||3E3,G=(new Date).getTime();return new Promise(function(a,b){var e;null===F&&(F=!!document.fonts);if(e=F)null===C&&(C=/OS X.*Version\/10\..*Safari/.test(navigator.userAgent)&&/Apple/.test(navigator.vendor)),e=!C;if(e){e=new Promise(function(a,b){function f(){(new Date).getTime()-G>=D?b():document.fonts.load(J(c,'"'+c.family+'"'),l).then(function(c){1<=c.length?a():setTimeout(f,25)},function(){b()})}f()});var K=new Promise(function(a,
+c){r=setTimeout(c,D)});Promise.race([K,e]).then(function(){clearTimeout(r);a(c)},function(){b(c)})}else n(function(){function e(){var b;if(b=-1!=g&&-1!=h||-1!=g&&-1!=k||-1!=h&&-1!=k)(b=g!=h&&g!=k&&h!=k)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(g==u&&h==u&&k==u||g==v&&h==v&&k==v||g==w&&h==w&&k==w)),b=!b;b&&(d.parentNode&&d.parentNode.removeChild(d),clearTimeout(r),a(c))}
+function H(){if((new Date).getTime()-G>=D)d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)g=f.a.offsetWidth,h=p.a.offsetWidth,k=q.a.offsetWidth,e();r=setTimeout(H,50)}}var f=new t(l),p=new t(l),q=new t(l),g=-1,h=-1,k=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(f,J(c,"sans-serif"));x(p,J(c,"serif"));x(q,J(c,"monospace"));d.appendChild(f.a);d.appendChild(p.a);d.appendChild(q.a);document.body.appendChild(d);u=f.a.offsetWidth;v=p.a.offsetWidth;
+w=q.a.offsetWidth;H();z(f,function(a){g=a;e()});x(f,J(c,'"'+c.family+'",sans-serif'));z(p,function(a){h=a;e()});x(p,J(c,'"'+c.family+'",serif'));z(q,function(a){k=a;e()});x(q,J(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+
+        var root = document.documentElement;
+        root.classList.add('is-webfont-not-loaded');
+        var fontSubset = new FontFaceObserver('RobotoSubset');
+        var fontNormal = new FontFaceObserver('Roboto');
+        var fontBold = new FontFaceObserver('Roboto', { weight: 700 });
+        var fontItalic = new FontFaceObserver('Roboto', { style: 'italic' });
+        fontSubset.load(null, 10000).then(function () {
+            root.classList.remove('is-webfont-not-loaded');
+            root.classList.add('is-webfont-subset');
+            Promise.all([fontNormal.load(null, 30000), fontBold.load(null, 30000), fontItalic.load(null, 30000)])
+                .then(function () {
+                    root.classList.remove('is-webfont-subset');
+                });
+        });
+    })();
+    </script>
+
+
+    <!-- FIXME: all these globals should be replaced by server-data -->
+    <script>
+        window._t = [];
+        window._lt = [];
+        window._ttref = [];
+        _ttref.push(['_setCookie']);
+    </script>
+
+    <style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+
+    
+
+    
+    <!-- Render-blocking styles -->
+    
+        <link href="https://www.f-cdn.com/assets/css/flux/base-81ba62d9.css" type="text/css" rel="stylesheet" />
+    
+        <link href="https://www.f-cdn.com/assets/css/flux/layout/PageLoginSignup-9a43433c.css" type="text/css" rel="stylesheet" />
+    
+
+    <link rel="stylesheet" href="https://www.f-cdn.com/assets/webapp-compat/styles.6bc7daea784d6e9483d7.bundle.css">
+    
+
+
+    <meta name="description" content="Login to access the ultimate freelance jobs website with millions of
+        freelance jobs and millions of professional freelancers ready to bid on your projects. If you don&#039;t have an
+        account, create one today."/>
+    
+
+    
+    
+    
+    <meta property="og:image" content="https://www.f-cdn.com/assets/img/facebook/default-04d56222.jpg"/>
+
+    
+
+    <meta name="robots" content="index, follow"/>
+    
+    
+    <meta name="verify-v1" content="TTmFSxUJxXuHsKl9kPGeYetHBfsjnO7s87WxaAha8NE="/>
+    <meta name="verify-v1" content="9ejzgFxg7wuxHdyyiqmdTe3JQgBUfIVvdJiXlVRHkEw="/>
+    <meta name="google-site-verification" content="Os01EUjriD5LgZ5VHZqf23SGdeCX-7g7dsi-8ekNBdk"/>
+    <meta name="google-site-verification" content="Xi9iryvGIjCbFdxBx5GjqMprKdhYIrOeKAgCSS_GEEs"/>
+    <meta name="google-site-verification" content="aUe2esuVVPvwLu9u_15cbwtL8CSU8cMP9ZtDNE_SNh8"/>
+    <meta name="google-site-verification" content="sPE5PAZlRuPYrymfB5FcOI7pq3dg9By1OVoH48jKvH8" />
+    <meta name="google-site-verification" content="blpbKwfjw3TUdN5_daIUVWTIhFknZKMNUxkp5_QxXPk" />
+    <meta name="alexaVerifyID" content="lOECm39vgYv4N9PwoW6nsSSLiUw"/>
+    <meta name="y_key" content="145378928393bc8d"/>
+    <meta name="msvalidate.01" content="756854B52F963132E377E441F92F1136"/>
+    <meta property="fb:admins" content="100000662403967"/>
+    <meta name="robots" content="noodp"/>
+
+    
+
+    
+
+<link href="https://www.freelancer.com/rss.xml" rel="alternate" type="application/rss+xml" title="Latest projects" >
+
+
+
+    <link rel="publisher" href="http://plus.google.com/+Freelancer"/>
+    
+    <link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Freelancer.com"/>
+    <link rel="icon" href="https://www.freelancer.com/favicon.ico" type="image/ico"/>
+    <link rel="shortcut icon" href="https://www.freelancer.com/favicon.ico"/>
+    
+        <link rel="alternate" hreflang="x-default" href="https://www.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en" href="https://www.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-AU" href="https://www.freelancer.com.au/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-NZ" href="https://www.freelancer.co.nz/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-GB" href="https://www.freelancer.co.uk/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="zh" href="https://www.freelancer.hk/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="zh-HK" href="https://www.freelancer.hk/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-SG" href="https://www.freelancer.sg/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-PH" href="https://www.freelancer.ph/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="de" href="https://www.freelancer.de/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="de-DE" href="https://www.freelancer.de/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-CA" href="https://www.freelancer.ca/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-ZA" href="https://www.freelancer.co.za/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-IN" href="https://www.freelancer.in/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-JM" href="https://www.freelancer.com.jm/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es" href="https://www.freelancer.es/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es-ES" href="https://www.freelancer.es/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es-MX" href="https://www.freelancer.mx/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es-PE" href="https://www.freelancer.com.pe/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es-EC" href="https://www.freelancer.ec/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es-CL" href="https://www.freelancer.cl/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-PK" href="https://www.freelancer.pk/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="id" href="https://www.freelancer.co.id/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="id-ID" href="https://www.freelancer.co.id/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-BD" href="https://www.freelancer.com.bd/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es-UY" href="https://www.freelancer.uy/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="pt" href="https://www.freelancer.pt/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="pt-PT" href="https://www.freelancer.pt/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ro" href="https://www.freelancer.co.ro/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ro-RO" href="https://www.freelancer.co.ro/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ru" href="https://www.freelancer.com.ru/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ru-RU" href="https://www.freelancer.com.ru/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="zh-CN" href="https://www.freelancer.cn/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ja" href="https://www.freelancer.jp/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ja-JP" href="https://www.freelancer.jp/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="el" href="https://www.freelancer.gr/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="el-GR" href="https://www.freelancer.gr/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-IS" href="https://www.freelancer.is/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="th" href="https://www.freelancer.co.th/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="th-TH" href="https://www.freelancer.co.th/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="cs" href="https://www.freelancer.cz/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="cs-CZ" href="https://www.freelancer.cz/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="pt-BR" href="https://www.br.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es-AR" href="https://www.freelancer.com.ar/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="es-CO" href="https://www.freelancer.com.co/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="pl" href="https://www.freelancer.pl/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="pl-PL" href="https://www.freelancer.pl/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="uk" href="https://www.freelancer.com.ua/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="uk-UA" href="https://www.freelancer.com.ua/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="nb" href="https://www.freelancer.no/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="nb-NO" href="https://www.freelancer.no/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ko" href="https://www.freelancer.co.kr/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ko-KR" href="https://www.freelancer.co.kr/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="en-IE" href="https://www.freelancer.ie/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="fr" href="https://www.fr.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="fr-FR" href="https://www.fr.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="it" href="https://www.freelancer.co.it/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="it-IT" href="https://www.freelancer.co.it/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="sl" href="https://www.freelancer.si/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="sl-SI" href="https://www.freelancer.si/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="sv" href="https://www.freelancer.se/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="sv-SE" href="https://www.freelancer.se/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="fi" href="https://www.fi.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="fi-FI" href="https://www.fi.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="da" href="https://www.dk.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="da-DK" href="https://www.dk.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ms" href="https://www.my.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="ms-MY" href="https://www.my.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="tr" href="https://www.tr.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="tr-TR" href="https://www.tr.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="vi" href="https://www.vn.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="vi-VN" href="https://www.vn.freelancer.com/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="sw" href="https://www.freelancer.co.ke/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="sw-KE" href="https://www.freelancer.co.ke/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="sq" href="https://www.freelancer.com.al/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="sq-AL" href="https://www.freelancer.com.al/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="hu" href="https://www.freelancer.hu/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/><link rel="alternate" hreflang="hu-HU" href="https://www.freelancer.hu/login?goto=YzI4M2RhYjEyZGI5ZGQzMzFjNTQxMjZmYTZjNDJhNzVodHRwczovL3d3dy5mcmVlbGFuY2VyLmNvbS9zaG93Y2FzZS9hZGQ_cGlkPTE1MTkwNDQx"/>
+    
+    
+    <link rel="canonical" href="https://www.freelancer.com/login"/>
+    <link rel="alternate" media="only screen and (max-width:640px)" href="https://m.freelancer.com/login" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "Freelancer",
+        "url": "http://www.freelancer.com/",
+        "logo": "http://www.freelancer.com/static/css/images/logo.jpg",
+        "sameAs" : [
+        "https://twitter.com/freelancer",
+        "https://www.facebook.com/fansoffreelancer",
+        "https://www.linkedin.com/company/freelancer-com",
+        "https://plus.google.com/+Freelancer/posts",
+        "https://instagram.com/freelancerofficial"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Freelancer",
+        "url": "https://www.freelancer.com"
+    }
+    </script>
+
+</head>
+<body data-role="page">
+
+    
+
+    <!-- Webapp compat loader. Dynamically load & bootstrap webapp Angular
+    components onto server-side pages. Yes, it's awesome -->
+    <script>
+    window.webappCompat = {};
+            window.webappCompat['tracking'] = {};
+            </script>
+
+<style>
+                        </style>
+            <webapp-compat-tracking class="WebappCompatPlaceholder"></webapp-compat-tracking>
+    <webapp-compat></webapp-compat>
+
+
+    <div class="pinky-template">
+        <main id="main" class="main-content">
+        
+          <script type='text/javascript'>
+    var ssl_base_url = "https://www.freelancer.com";
+    var go_to = 'https://www.freelancer.com/showcase/add?pid=15190441';
+
+    var error_codes = {"AUTH_ERR_BAD_PWD":1,"AUTH_ERR_ACC_CLSD":2,"AUTH_ERR_ACC_SUSP":3,"AUTH_ERR_TECH_DIFF":4,"AUTH_ERR_2FA_REQUIRED":5,"AUTH_ERR_RATE_LIMITED":6};
+</script>
+
+<div id='login_form_container' class="header-login-form">
+    <div class="loading-icon-wrapper">
+        <div class="Loader"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </main>
+    </div>
+    <div class="pinky-template">
+        
+
+        
+    </div>
+
+    <!-- FIXME: please get rid of that, that should be lazy loaded through SystemJS -->
+    
+    <div class="pinky-template">
+        <div class="responsive-modal hide" id="fb_popup">
+    <section class="FacebookSignUpModal modal fb-bs-identifier">
+        <header class="FacebookSignUpModal-header modal-header">
+            <a class="close FacebookSignUpModal-close close-fb-modal-bs" data-dismiss="modal">
+                <span>&times;</span>
+            </a>
+            <h3 id="fb_login_welcome" class="FacebookSignUpModal-heading">
+                Welcome, <span class ="fb_fullname"></span>!
+                <span id="fb_login_status">Processing &hellip;</span>
+            </h3>
+            <h3 id="fb_signup_welcome" class="FacebookSignUpModal-heading" style="display: none">
+                Welcome <span class ="fb_fullname"></span>!
+            </h3>
+            <h3 id="fb_link_welcome" class="FacebookSignUpModal-heading" style="display: none">
+                Link to existing Freelancer account
+            </h3>
+            <div id="fb_error_title" class="FacebookSignUpModal-heading" style="display: none"></div>
+
+            <!-- Profile Image -->
+            <div class="FacebookSignUpModal-avatar">
+                <div id="fb_profile_pic" class="FacebookSignUpModal-avatarImage ImageThumbnail fb_div" style="display:none"> </div>
+            </div>
+        </header>
+
+        <div class="modal-body" id="fb-modal-body">
+            <div class="FacebookSignUpModal-content">
+                <div id="fb_loading" class="FacebookSignUpModal-loader Loader Loader--full"></div>
+
+                <!-- Link To Existing Account -->
+                <form id="fb_link" class="FacebookSignUpModal-form fl-form" style="display:none">
+                    <div class="form-step">
+                        <div id="fb_email_already_linked">
+                            <p>
+                              The email address <span id="fb_link_email"></span> is already associated with a Freelancer account.
+                              <span>Enter your password below to link accounts:</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <label>Username:</label>
+                        <div id="fb_link_user_display"></div>
+                    </div>
+                    <div class="form-step">
+                        <input id='fb_link_user' type="hidden">
+                        <label for="fb_link_passwd">Password:</label>
+                        <input type="password" class="fb_passwd inline-error FacebookSignUpModal-input default-input"
+                               id="fb_link_passwd" placeholder="">
+                        <p>
+                            <a href="#" id="fb_forgot_password_btn">
+                                <small>I forgot my password</small>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="link-account-error alert alert-error" style="display:none"></div>
+                    <div class="form-step">
+                        <button id="fb_link_btn" type="button" value="Submit"
+                                class="fbLinkBtn btn btn-info FacebookSignUpModal-ctaButton">
+                            Link Accounts
+                        </button>
+                        <div class="FacebookSignUpModal-loader Loader Loader--full fb_submit_loading" style="display:none;" ></div>
+                    </div>
+                </form>
+
+                <!-- Error -->
+                <div id="fb_error_div" style="display:none">
+                    <div id="fb_error_content">
+                    </div>
+                    <button class="fbCloseBtn btn FacebookSignUpModal-ctaButton">Close</button>
+                </div>
+
+                <div id="signupRadioBtns" class="hide">
+                    <!-- User Type Selectors -->
+                    <div class="user_type FacebookSignUpModal-method" data-toggle="buttons-radio">
+                        <label class="FacebookSignUpModal-radio">
+                            <input type="radio" id="fb_signup_btn" name="connect_type" value="fb_signup" checked='checked'>I am a new user
+                        </label>
+                        <label class="FacebookSignUpModal-radio">
+                            <input type="radio" id="fb_login_btn" name="connect_type" value="fb_login">I am a returning user
+                        </label>
+                    </div>
+
+                    <!-- New User Signup -->
+                    <form id="fb_signup" class="FacebookSignUpModal-form connect_div fb_div fl-form" style="display:none">
+                        <p>Link your account to a new Freelancer account</p>
+                        <div class="form-step">
+                          <label>Email address</label>
+                          <div id="fb_email"></div>
+                        </div>
+                        <div class="form-step control-group">
+                            <label for="fb_user">
+                              Username
+                            </label>
+                            <input id="fb_user" class="FacebookSignUpModal-input default-input" type="text" value="">
+                            <div class="form-alert" id="chk_username_exist">Valid username</div>
+                            <input type="hidden" id="fb_currency">
+                            <input type="hidden" id="fb_timezone">
+                        </div>
+                        <div class="form-step control-group">
+                            <label id="fb_looking_for_label" class="control-label">I am looking to</label>
+                            <div class="FacebookSignUpModal-radioButtonGroup button-group" data-toggle="buttons-radio"
+                                 data-default="
+                                 none">
+                                <label class="FacebookSignUpModal-lookingForButton btn">
+                                    <input type="radio" name="looking_for" id="fb_looking_to_hire"
+                                           value="Employer" class="required FacebookSignUpModal-radio">Hire
+                                </label>
+                                <label class="FacebookSignUpModal-lookingForButton btn">
+                                    <input type="radio" name="looking_for" id="fb_looking_for_work"
+                                           class="FacebookSignUpModal-radio" value="Worker">Work
+                                </label>
+                            </div>
+                        </div>
+                        <button id="fbSignupBtn" type="submit" value="Submit"
+                                class="btn btn-info FacebookSignUpModal-ctaButton">Create Account</button>
+                        
+                        <div class="FacebookSignUpModal-loader Loader Loader--full fb_submit_loading" style="display:none;" ></div>
+                    </form>
+
+                    <!-- User Login -->
+                    <form id="fb_login" class="FacebookSignUpModal-form connect_div fb_div fl-form" style="display:none">
+                        <p>Link to your existing Freelancer account</p>
+                        <div id="fb-returning-user-fields">
+                            <div id="fb-return-user-username-field" class="form-step">
+                                <label for="fb_login_user">Username or Email</label>
+                                <input id="fb_login_user" class="FacebookSignUpModal-input default-input" type="text">
+                            </div>
+                            <div class="form-step">
+                                <label for="fb_login_passwd">Password</label>
+                                <input id="fb_login_passwd" class="FacebookSignUpModal-input default-input" type="password">
+                                <a class="FacebookSignUpModal-forgotPassword" href="#"
+                                   onclick='window.open("/users/forgot.php","","width=500, height=450, left=100,top=100,menu=no, toolbar=no,scrollbars=yes,resizable=yes");return false;'>
+                                   I forgot my password
+                                </a>
+                            </div>
+                        </div>
+                        <div class="link-account-error alert alert-danger" style="display:none"></div>
+                        <button type="button" id="fb_link_account_btn" value="Submit"
+                                class="fbLinkBtn btn btn-info FacebookSignUpModal-ctaButton">Link Accounts</button>
+                        <div class="FacebookSignUpModal-loader Loader Loader--full fb_submit_loading" style="display:none;" ></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="facebookConnect-backdrop" class="modal-backdrop"></div>
+</div>
+<!-- Necessary for Forgot Password modal -->
+<div id="facebook-loginsignup-container"></div>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    <fl-modal-container class="pinky-template"></fl-modal-container>
+
+    <!-- JS SDKs: think twice before adding something here -->
+    <!-- SHOULD NEVER EVER include synchronous scripts. -->
+    <!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+    ga('create', 'UA-223765-6', 'auto');
+
+    // Set User ID if exist
+    
+
+    // ga('require', 'displayfeatures');
+    // This is to differentiate different links to the same page - one in nav bar, one in side bar
+    // ga('require', 'linkid', 'linkid.js');
+
+    // This is page group like tags, PVP, CVP, Profiles
+    
+        ga('set', 'contentGroup1', 'Login Page');
+        ga('set', 'dimension1', 'Login Page');
+    
+    // This is domain group
+    
+        ga('set', 'contentGroup2', 'Freelancer.com');
+    
+
+    // Use canonical URL as the url of the page if exist
+    
+        ga('set', 'location', 'https://www.freelancer.com/login');
+    
+
+    // Gets cookie for `event` and sends it if exist
+    const gaCookies = document.cookie.split(';');
+    for (let cookie of gaCookies) {
+        cookie = cookie.trim();
+        const [gaKey, gaRawData] = cookie.split('=');
+        if (gaKey === 'gaevent' && gaRawData) {
+            const gaData = decodeURIComponent(gaRawData);
+            const gaEventData = JSON.parse(gaData.replace(/\+/g, ' '));
+            gaEventData.forEach(event => {
+                event.hitType = 'event';
+                ga('send', event);
+            });
+            document.cookie = 'gaevent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'
+            break;
+        }
+    };
+
+    // Send Pageview after everything is set
+    ga('send', 'pageview');
+
+
+</script>
+<!-- End Google Analytics -->
+
+    <!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+
+    if ((typeof window.usertype != 'undefined') && (window.usertype != '')) {
+       loadGARemarketingPixel(window.usertype);
+    }
+
+    function loadGARemarketingPixel(usertype) {
+        if (!document.getElementById('remarketingPixel')) {
+            var google_tag_params = google_tag_params || {};
+            var trackUrl = "https://www.googleadservices.com/pagead/conversion/viewthroughconversion/1015002772/";
+            var params =  "?value=0&guid=ON&script=0&remarketing_only=true";
+            params = params + '&usertype=' + usertype;
+            var img = document.createElement("img");
+            img.id = 'remarketingPixel'
+            img.src = trackUrl + params;
+            document.body.appendChild(img);
+        }
+    }
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="Freelancer Remarketing Tag"
+            src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1015002772/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-G7FX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-G7FX');</script>
+<!-- End Google Tag Manager -->
+
+
+    <!-- GLOBAL page data: for vars shared amongst multiple modules -->
+    <!-- KEEP THEIR NUMBER AS FEW AS POSSIBLE -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- GLOBAL SystemJS modules: only the *really* global modules go there  -->
+    <!-- KEEP THEIR NUMBER AS FEW AS POSSIBLE -->
+    
+    
+    
+    
+
+    <!-- SystemJS  -->
+<script defer src="https://www.f-cdn.com/assets/polyfills-c9849a71.js"></script>
+
+<link rel="preload" href="https://www.f-cdn.com/assets/webapp-compat/tracking.module.83f53700de87f60ebd7d.chunk.js" as="script">
+<script defer src="https://www.f-cdn.com/assets/webapp-compat/inline.da26743f16d48d251aa9.bundle.js"></script>
+<script defer src="https://www.f-cdn.com/assets/webapp-compat/main.adb9f7391f1f96c6f5ad.bundle.js"></script>
+
+<script defer id="systemjs-loader" src="https://www.f-cdn.com/assets/systemjs-bb0dda0d.js"></script>
+<script defer id="systemjs-config" src="https://www.f-cdn.com/assets/systemjs-config-f468cdfc.js"></script>
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/login-signup-78eeb5cd.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/jquery-2a219125.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/underscore-dbdc2824.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/backbone-72b7dbd3.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/mailcheck-7a5c7ac3.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/recaptcha_ajax-0ec3523a.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/bootstrap-d792a7e6.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/tracking-12061731.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/jquery-2a219125.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/error-handler-legacy-430ce6e8.js" as="script">
+<script>
+document.getElementById('systemjs-loader').addEventListener('load', function() {
+  System.config({
+    baseURL: "https:\/\/www.f-cdn.com" + "/assets"
+  });
+  window.define = SystemJS.amdDefine;
+  window.require = window.requirejs = SystemJS.amdRequire;
+  System.config({
+    packages: {
+      bundles: {
+        meta: {
+          "*": {
+            scriptLoad: true
+          }
+        }
+      }
+    }
+  });
+  if (window.performance && window.performance.mark) {
+    window.performance.mark('systemjs_loader_ready');
+  }
+});
+
+document.getElementById('systemjs-config').addEventListener('load', function() {
+  if (window.performance && window.performance.mark) {
+    window.performance.mark('systemjs_config_ready');
+  }
+
+  System.register(
+    'server-data/login-signup', [], function(__export) {
+            var facebookAppId;
+      var sslBaseUrl;
+      var isLocalProject;
+      var backToSignupSourcePage;
+      var isLoginSignup;
+      var onFreemarket;
+      var onAffiliatesHiremePage;
+      var hideConfirmPassword;
+      var onContest;
+      var redirectToPcpAfterEmployerSignup;
+      var redirectToGotoUrl;
+      var gotoUrl;
+      var showSignup;
+      var showLogin;
+      var preFillSignupForm;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('facebookAppId', 120131118061981);
+          __export('sslBaseUrl', "https:\/\/www.freelancer.com");
+          __export('isLocalProject', null);
+          __export('backToSignupSourcePage', null);
+          __export('isLoginSignup', 1);
+          __export('onFreemarket', null);
+          __export('onAffiliatesHiremePage', null);
+          __export('hideConfirmPassword', null);
+          __export('onContest', null);
+          __export('redirectToPcpAfterEmployerSignup', null);
+          __export('redirectToGotoUrl', null);
+          __export('gotoUrl', "https:\/\/www.freelancer.com\/showcase\/add?pid=15190441");
+          __export('showSignup', null);
+          __export('showLogin', null);
+          __export('preFillSignupForm', null);
+          }
+      };
+    }
+  );
+  System.register(
+    'server-data/flconfigs', [], function(__export) {
+            var sslBaseUrl;
+      var cookieBase;
+      var notifyServer;
+      var flnBillingBaseUrl;
+      var languageCode;
+      var cookieDomain;
+      var siteName;
+      var cdnUrls;
+      var thmSslBaseUrl;
+      var thmOrgId;
+      var facebookAppId;
+      var userJobs;
+      var messagingABTests;
+      var globalMatchmakingABTests;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('sslBaseUrl', "https:\/\/www.freelancer.com");
+          __export('cookieBase', "GETAFREE");
+          __export('notifyServer', "\/\/notifications.freelancer.com");
+          __export('flnBillingBaseUrl', "https:\/\/api.freelancerbilling.com");
+          __export('languageCode', "en");
+          __export('cookieDomain', ".freelancer.com");
+          __export('siteName', "Freelancer.com");
+          __export('cdnUrls', ["cdn2.f-cdn.com","cdn3.f-cdn.com","cdn5.f-cdn.com","cdn6.f-cdn.com"]);
+          __export('thmSslBaseUrl', "https:\/\/cdn1.f-cdn.com");
+          __export('thmOrgId', "lar9e74p");
+          __export('facebookAppId', "120131118061981");
+          __export('userJobs', null);
+          __export('messagingABTests', []);
+          __export('globalMatchmakingABTests', []);
+          }
+      };
+    }
+  );
+  System.register(
+    'server-data/tracking', [], function(__export) {
+            var qtsHttpEndpoint;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('qtsHttpEndpoint', "\/\/t.freelancer.com\/");
+          }
+      };
+    }
+  );
+
+  System.register(
+    'angular-server-data/flconfigs',
+    ['angular'],
+    function(__export) {
+      var angular;
+      var messagingABTests;
+      var globalMatchmakingABTests;
+      return {
+        setters: [
+          function(ng) {
+            angular = ng.default;
+          }
+        ],
+        execute: function() {
+          angular.module('flconfigs/messagingABTests', []).constant(
+              'messagingABTests', []
+            );
+            __export('messagingABTests', 'flconfigs/messagingABTests');
+          angular.module('flconfigs/globalMatchmakingABTests', []).constant(
+              'globalMatchmakingABTests', []
+            );
+            __export('globalMatchmakingABTests', 'flconfigs/globalMatchmakingABTests');
+          }
+      };
+    }
+  );
+
+  System.import('modules/login-signup');
+  System.import('modules/tracking');
+  System.import('modules/error-handler-legacy');
+});
+</script>
+
+<!--// SystemJS  -->
+
+
+</body>
+</html>
