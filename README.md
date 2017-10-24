@@ -41,6 +41,7 @@ Other than the above, I have experience in :
 - Image processing
 - Numerical calculation
 - Data visualization
+- Database (MySQL)
 
 ## MATLAB
 I used MATLAB for my research when I was a graduate student.
