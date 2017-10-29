@@ -1,6 +1,6 @@
 # Freelance
 
-I have been freelancing since January 2017 on https://www.freelancer.com. This is [my account](https://www.freelancer.com/u/harupy#/) where you can see the projects I've completed and the reviews posted on me. I upload some of the projects I've completed in this repository.<br>
+I have been freelancing since January 2017 on https://www.freelancer.com. Here's [my account](https://www.freelancer.com/u/harupy#/) where you can see the projects I've completed and the reviews posted on me. I upload some of the projects I've completed in this repository.<br>
 <br>
 I also have [my YouTube channel](https://www.youtube.com/channel/UCJlw4oNDThhfdeiE57qLQuQ) where I upload videos about my Python programs.
 
