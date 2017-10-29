@@ -2,8 +2,8 @@
 
 I have been freelancing since January 2017 on https://www.freelancer.com.<br>
 This is [my account](https://www.freelancer.com/u/harupy#/) where you can see the projects I've completed and the reviews posted on me.<br>
-Here's [my YouTube channel](https://www.youtube.com/channel/UCJlw4oNDThhfdeiE57qLQuQ)<br>
 I upload some of the projects I've complete in this repository.
+I also have [my YouTube channel](https://www.youtube.com/channel/UCJlw4oNDThhfdeiE57qLQuQ)<br>
 
 The service I provide includes (I mainly use Python) :
 - Web scraping (beautifulsoup)
