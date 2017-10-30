@@ -4,11 +4,11 @@ I have been freelancing since January 2017 on https://www.freelancer.com. Here's
 <br>
 
 The service I provide includes (I mainly use Python) :
-- Web scraping (beautifulsoup)
-- Browser automation (selenium)
-- Data visualization (matplotlib)
-- Numerical calculation (numpy)
-- Image processing (opencv & pillow)
+- web scraping (beautifulsoup)
+- browser automation (selenium)
+- data visualization (matplotlib)
+- numerical calculation (numpy)
+- image processing (opencv & pillow)
 
 I also have [my YouTube channel](https://www.youtube.com/channel/UCJlw4oNDThhfdeiE57qLQuQ) where I upload videos about my Python programs.
 
@@ -37,10 +37,10 @@ When I was a graduate student, I developed graphical user interfaces in Python w
 <br>
 
 Other than the above, I have experience in :
-- Image processing
-- Numerical calculation
-- Data visualization
-- Database (MySQL)
+- image processing
+- numerical calculation
+- data visualization
+- database (MySQL)
 
 ## MATLAB
 I used MATLAB for my research when I was a graduate student.
