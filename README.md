@@ -1,3 +1,3 @@
 # Freelancer
 
-I upload some the projects I've completed in [freelancer.com](https://www.freelancer.com/) here.
+I upload some of the projects I've completed in [freelancer.com](https://www.freelancer.com/) in this repository.
